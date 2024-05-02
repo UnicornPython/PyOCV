@@ -1,11 +1,18 @@
 #!python 
 
-import cv2.cv2 as cv2
+import cv2
+
+
+"""
+opencv 中关于 windows 操作的定义在
+`opencv/modules/highgui/include/opencv2/highgui.hpp`
+
+"""
 
 
 def main():
     cv2.namedWindow("img", cv2.WINDOW_NORMAL)
-    img = cv2.imread("D:/PyCode/OCVModule/images/back.jpg")
+    img = cv2.imread("./images/back.jpg")
     cv2.imshow("img", img)
 
     key = cv2.waitKey(0)
@@ -15,7 +22,6 @@ def main():
         exit()
 
     cv2.destroyAllWindows()
-
 
 if __name__ == "__main__":
     main()
