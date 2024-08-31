@@ -12,7 +12,6 @@ import numpy as np
 def mouse_callback(event, x, y, flags, userdata):
     print(event, x, y, flags, userdata)
 
-
 def main():
 
     cv2.namedWindow("mouse", cv2.WINDOW_NORMAL)
