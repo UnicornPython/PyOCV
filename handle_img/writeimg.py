@@ -3,7 +3,7 @@ import cv2
 def main():
 
     cv2.namedWindow("img", cv2.WINDOW_AUTOSIZE)
-    img = cv2.imread("./images/123.jpg")
+    img = cv2.imread("./images/back.jpg")
     cv2.imshow("img", img)
 
     while True:
